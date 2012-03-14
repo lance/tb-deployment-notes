@@ -114,12 +114,13 @@ mine looks like.
     JBOSS_CONSOLE_LOG=/var/log/torquebox/console.log
     JBOSS_CONFIG=standalone-ha.xml
     
-Now, if everything is done correctly, you can check your installation by
+Run `chkconfig --add jboss-as-standalone` to make sure the service is started
+at boot.
+
+Now, if everything is done correctly, you can test your installation by
 running `service jboss-as-standalone start`. Then check the output in 
 `/var/log/console.log`. Works OK? Great - let's move on.
 
-NB: I believe there is more to do here in order to ensure that the system
-starts jboss, but my sysadmin skillz are rusty. Comments welcome.
 
 ## Supporting Servers and Software
 
